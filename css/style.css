@@ -58,6 +58,28 @@ a {
     color: var(--main-bg-color)
 }
 
+.liste-header ul {
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    gap: 68px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 61px;
+    height: 19px;
+}
+span {
+    color: #0065FC;
+}
+
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;

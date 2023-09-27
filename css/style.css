@@ -74,37 +74,38 @@ a {
     align-items: center;
 }
 
+
 #logo {
     width: 61px;
     height: 19px;
 }
-span {
+
+a:hover {
+    border-top: 2px solid #0065FC;
+    padding-top:  14px;
     color: #0065FC;
 }
 
 /* Tittle+ Search bar*/
-.info-group {
-    display: flex;
-    flex-direction: column;
-    padding: 35px;
+.headline h1 {
+    margin-bottom: 0;
+}
+
+.headline p {
+    margin-top: 8px;
+    margin-bottom: 35px;
 }
 
 .search-bar {
     display: flex;
     align-items: center;
-    width: 315px;
-    height: 50px;
-    gap: 10px;
-    border-collapse: collapse;
-    border: 1px solid #F2F2F2;
-    border-radius: 15px;
-
+    width: 377px;
+    height: 49px;
+    margin-bottom: 15px;
+    margin-top: 0px;
 }
 
 
-.search-bar p{
-    font-weight: bold;
-}
 .icon-location {
     width: 50px;
     height: 50px;
@@ -122,9 +123,13 @@ span {
     color: black
 }
 
+#text {
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    padding: 15px;
+} /* texte par défaut dans la barre de recherche*/
 
-
-.button-search {
+button {
     color: white;
     background-color: #0065FC;
     display: flex;
@@ -133,7 +138,9 @@ span {
     gap: 24px;
     border: 1px solid #F2F2F2;
     border-radius: 0px 15px 15px 0px;
-}
+    font-weight: bold;
+} /*bouton rechercher*/
+
 
 /* Section filter*/
 .icon-filter {
@@ -152,11 +159,17 @@ span {
     padding: 4px 19px;
     gap: 10px;
     font-weight: bold;
+} /* les différentes icones de la section filtres*/
+
+.icon:hover {
+    background-color: #DEEBFF;
 }
+
 .filter-bar {
     display: flex;
     flex-direction: row;
     align-items:  center;
+    margin-top: 0px;
 }
 
 
@@ -166,6 +179,10 @@ span {
     gap: 10px;
     margin-bottom: 35px;
 }
+
+
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {

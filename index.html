@@ -24,8 +24,8 @@
                
                <div class="list-header">
                    <ul>
-                        <li><span>Hébergements</span></li>
-                        <li>Activités</li>
+                        <li><a href="#">Hébergements</a></li>
+                        <li><a href="#">Activités</a></li>
                    </ul>
                </div>
             </div>
@@ -35,14 +35,15 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 
-                <div class="search-bar">
+                <form action="" class="search-bar">
                     
                     <div class="icon-location">
                         <i class="fa-solid fa-location-dot"></i>
                     </div>
-                    <p>Marseille,France</p>
-                    <p class="button-search">Rechercher</p>
-                </div>
+                    
+                    <input type="text" id=text name="Champ de recherche" value="Marseille, France">
+                    <button>Rechercher</button>
+                </form>
                 
                 <div class="filter-bar">
                     <h3>Filtres</h3>
@@ -55,7 +56,7 @@
                 </div>
                 
                 <div class="infobar">
-                    <img src="images/Icon.png" alt="info icon"> Plus de 500 logements sont disponibles dans cette ville
+                    <p><i class="fa-solid fa-circle-info"> </i> Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </div>
         </header>

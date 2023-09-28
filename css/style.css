@@ -61,6 +61,7 @@ a {
 /*HEADER*/
 
 /* Logo +menu*/
+
 .list-header ul {
     display: flex;
     list-style-type: none;
@@ -72,7 +73,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+} /*first part of the header*/
 
 
 #logo {
@@ -82,19 +83,20 @@ a {
 
 a:hover {
     border-top: 2px solid #0065FC;
-    padding-top:  14px;
+    padding-top:  20px;
     color: #0065FC;
 }
 
 /* Tittle+ Search bar*/
+
 .headline h1 {
     margin-bottom: 0;
-}
+} /* big title*/
 
 .headline p {
     margin-top: 8px;
     margin-bottom: 35px;
-}
+} /*smallest title*/
 
 .search-bar {
     display: flex;
@@ -127,7 +129,7 @@ a:hover {
     border: 1px solid #F2F2F2;
     font-weight: bold;
     padding: 15px;
-} /* texte par défaut dans la barre de recherche*/
+} /* default text in search bar*/
 
 button {
     color: white;
@@ -139,7 +141,7 @@ button {
     border: 1px solid #F2F2F2;
     border-radius: 0px 15px 15px 0px;
     font-weight: bold;
-} /*bouton rechercher*/
+} /*button "Rechercher"*/
 
 
 /* Section filter*/
@@ -159,11 +161,11 @@ button {
     padding: 4px 19px;
     gap: 10px;
     font-weight: bold;
-} /* les différentes icones de la section filtres*/
+} /* different icons of the filters section*/
 
 .icon:hover {
     background-color: #DEEBFF;
-}
+} 
 
 .filter-bar {
     display: flex;

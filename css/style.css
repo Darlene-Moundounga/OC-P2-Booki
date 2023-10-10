@@ -182,7 +182,9 @@ button {
     margin-bottom: 35px;
 }
 
-
+.search-icon {
+    display: none;
+}
 
 
 
@@ -271,6 +273,7 @@ button {
     justify-content: space-between;
     box-sizing: border-box;
 }
+
 
 .populaires-cards .card-title {
     margin-top: 10px;
@@ -405,5 +408,149 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .section-header{
+        flex-direction: column;  
+    }
+
+    .Logo-Booki {
+        padding: 30px;
+    }
+
+    .list-header {
+        width: 100%;
+        border-bottom:2px solid #DEEBFF;
+        height: 50px;
+    }
+
+    .list-header a:hover {
+        border-bottom: 2px solid #0065FC;
+        color: #0065FC;
+        border-top: none;
+        padding: 15px;
+        
+    }
+
+    
+
+    .headline h1 {
+        font-size: 22px;
+    }
+
+    .info-group {
+        margin: 0px 20px 0px 20px;
+    }
+
+    .search-text {
+        display: none;
+    }
+
+    .search-icon .fa-magnifying-glass {
+        color: white;
+        width: 17px;
+        height: 17px;
+        font-weight: bold;
+    }
+
+    .search-icon {
+
+        display: block;
+    }
+
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-bar h3 {
+        margin-bottom: 0px;
+    }
+
+    .icon-filter {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 0;
+    }
+    .icon-filter li {
+        height: 50px;
+        gap: 10px;
+        flex: 1 0 0;
+    }
+
+    .infobar p {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+
+    .hebergements-and-populaires{
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+
+    #hébergements {
+        background-color: white;
+        width: 100%;
+    }
+
+    .hebergements h2 {
+        font-size: 22px;
+    }
+    .hebergements-cards{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .hebergements-cards .card {
+        width: 335px;
+    }
+    
+    .hebergements h3 {
+        margin-top: 0;
+    }
+
+
+    
+
+    .populaires-cards {
+        flex-direction: column;
+    }
+
+    .populaires-cards a {
+        width: 100%;
+    }
+
+    #activités {
+        margin: 30px;
+    }
+   .activities-cards{
+     width: 100%;
+     flex-direction: column;
+     align-items: center;
+     gap: 15px;
+     justify-content: space-between;
+    }
+
+    .activities-cards .card {
+        width: 315px;
+        height: 200px;
+    }
+
+    .activities-cards img {
+        height: 141px;
+    }
+    
+
+    footer {
+        flex-direction: column;
+    }
+    
 }

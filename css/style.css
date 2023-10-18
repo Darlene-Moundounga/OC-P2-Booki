@@ -48,7 +48,7 @@ a {
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 0.8em;
 }
 
 .euro {
@@ -132,7 +132,7 @@ a {
     padding: 15px;
 } /* default text in search bar*/
 
-button {
+.search-bar button {
     color: white;
     background-color: #0065FC;
     display: flex;
@@ -147,11 +147,14 @@ button {
 
 /* Section filter*/
 .icon-filter {
-    list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 15px;
     height: 50px;
+}
+
+.icon-filter button {
+    background: none;
 }
 
 .money, .person, .heart, .fire {
@@ -173,6 +176,7 @@ button {
     flex-direction: row;
     align-items:  center;
     margin-top: 0px;
+    gap: 15px;
 }
 
 
@@ -216,7 +220,7 @@ button {
     width: 100%;
     height: 124px;
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
 }
 
 .hebergements-cards {
@@ -226,8 +230,9 @@ button {
     gap: 15px;
 }
 
-.hebergements-cards .card {
-    width: 250px;
+
+.hebergements-cards a {
+    width: 30%;
 }
 
 .hebergements-cards .card-title {
@@ -295,14 +300,18 @@ button {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding-bottom: 30px;
     
 }
 
 .activities-cards .card {
-    width: 298px;
-    height: 439px;
-    padding: 0px;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
+    padding: 0px 0px 15px 0px;
+    height: 439px;
+}
+.activities-cards a {
+    width: 25%;
+    height: auto;
 }
 
 .activities-cards img {
@@ -326,15 +335,13 @@ footer nav {
     display: flex;
     flex-direction: row;
     margin-top: 35px;
+    justify-content: space-between;
 }
 
-.section{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    margin-left: 20px;
+footer nav div {
+    width: 33%;
+    padding: 20px;
 }
-
 
 
 
@@ -353,15 +360,23 @@ footer nav {
     }
 
     .hebergements-cards .card {
-        width: 260px;
-        height: 192px;
+        width: 100%;
+        height: auto;
         padding-bottom: 15px;
     
+    }
+
+    .hebergements-cards {
+        gap: 30px;
     }
 
     .hebergements-cards img {
         width: 100%;
         height: 124px;
+    }
+
+    .card-title {
+        font-size: 1em;
     }
 
     
@@ -397,8 +412,12 @@ footer nav {
         width: 100%;
     }
     .activities-cards .card {
-        width: 194px;
+        width: 100%;
         height: 270px;
+    }
+
+    .activities-cards a {
+        height: auto;
     }
 
     .activities-cards img{
@@ -416,7 +435,6 @@ footer nav {
 
     .main-container {
         padding: 0;
-        overflow: hidden;
     }
 
     .section-header{
@@ -474,7 +492,7 @@ footer nav {
         margin-bottom: 35px;
     }
 
-    button {
+    .search-bar button {
         border-radius: 15px;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
@@ -510,7 +528,7 @@ footer nav {
         height: auto;
         padding: 0;
     }
-    .icon-filter li {
+    .icon-filter button {
         height: 50px;
         gap: 10px;
         flex: 1 0 0;
@@ -544,10 +562,14 @@ footer nav {
         align-items: normal;
     }
     
-    .hebergements-cards .card {
+    .hebergements-cards a {
         width: 100%;
     }
     
+    .card-title {
+        font-size: 1em;
+    }
+
     .hebergements h3 {
         margin-top: 0;
     }
@@ -570,13 +592,18 @@ footer nav {
         margin: 30px;
         width: auto;
     }
+
    .activities-cards{
      flex-direction: column;
      gap: 15px;
     }
 
-    .activities-cards .card {
+    .activities-cards a {
         width: 100%;
+        height: auto;
+    }
+
+    .activities-cards .card {
         height: 200px;
     }
 
@@ -587,20 +614,14 @@ footer nav {
 
     footer nav {
         flex-direction: column;
+        padding: 30px;
     }
+
+    footer nav div {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+}
     
-    footer .section {
-        margin: 30px 30px 0px 30px;
-
-    }
-
-    footer h3, p {
-        margin-bottom: 15px;
-    }
-
-}
-
-@media (min-width: 1440px) {
-    html {margin: auto;
-    }
-}
